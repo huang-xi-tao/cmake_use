@@ -1,9 +1,0 @@
-/home/hxt/Desktop/cmake_use/build/CMakeFiles/edit_cache.dir
-/home/hxt/Desktop/cmake_use/build/CMakeFiles/rebuild_cache.dir
-/home/hxt/Desktop/cmake_use/build/lib_testFunc/CMakeFiles/testFunc_shared.dir
-/home/hxt/Desktop/cmake_use/build/lib_testFunc/CMakeFiles/testFunc_static.dir
-/home/hxt/Desktop/cmake_use/build/lib_testFunc/CMakeFiles/edit_cache.dir
-/home/hxt/Desktop/cmake_use/build/lib_testFunc/CMakeFiles/rebuild_cache.dir
-/home/hxt/Desktop/cmake_use/build/src/CMakeFiles/main.dir
-/home/hxt/Desktop/cmake_use/build/src/CMakeFiles/edit_cache.dir
-/home/hxt/Desktop/cmake_use/build/src/CMakeFiles/rebuild_cache.dir

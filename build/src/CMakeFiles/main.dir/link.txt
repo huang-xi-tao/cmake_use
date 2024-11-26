@@ -1,1 +1,0 @@
-/usr/bin/cc -rdynamic CMakeFiles/main.dir/main.c.o -o /home/hxt/Desktop/cmake_use/bin/main   -L/home/hxt/Desktop/cmake_use/lib  -Wl,-rpath,/home/hxt/Desktop/cmake_use/lib -ltestFunc
