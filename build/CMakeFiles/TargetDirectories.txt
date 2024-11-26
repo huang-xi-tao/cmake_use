@@ -1,3 +1,0 @@
-/home/hxt/Desktop/cmake_demo/build/CMakeFiles/main.dir
-/home/hxt/Desktop/cmake_demo/build/CMakeFiles/edit_cache.dir
-/home/hxt/Desktop/cmake_demo/build/CMakeFiles/rebuild_cache.dir
