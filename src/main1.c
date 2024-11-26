@@ -1,10 +1,9 @@
+// main1.c
 #include <stdio.h>
-
-#include "testFunc.h"
 
 int main(void)
 {
-    func(100);
+    printf("hello, this main1\n");
     
     return 0;
 }

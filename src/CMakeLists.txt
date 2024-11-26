@@ -1,12 +1,9 @@
-aux_source_directory(. SRC_LIST)
+cmake_minimum_required(VERSION 2.8)
 
-# find testFunc.h
-include_directories(../lib_testFunc)
+add_executable(main1 main1.c)
 
-link_directories(${PROJECT_SOURCE_DIR}/lib)
-
-add_executable(main ${SRC_LIST})
-
-target_link_libraries(main testFunc)
-
-set(EXECUTABLE_OUTPUT_PATH ${PROJECT_SOURCE_DIR}/bin)
+if(MYDEBUG)
+    add_executable(main2 main2.c)
+else()
+    message(STATUS "Currently is not in debug mode")    
+endif()
