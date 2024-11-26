@@ -1,4 +1,4 @@
-# Install script for directory: /home/hxt/Desktop/cmake_demo/src
+# Install script for directory: /home/hxt/Desktop/cmake_use/src
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)

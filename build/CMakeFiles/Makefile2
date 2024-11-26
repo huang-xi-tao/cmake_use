@@ -54,51 +54,138 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/hxt/Desktop/cmake_demo
+CMAKE_SOURCE_DIR = /home/hxt/Desktop/cmake_use
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/hxt/Desktop/cmake_demo/build
+CMAKE_BINARY_DIR = /home/hxt/Desktop/cmake_use/build
 
 #=============================================================================
 # Directory level rules for the build root directory
 
 # The main recursive "all" target.
-all: CMakeFiles/main.dir/all
+all: lib_testFunc/all
+all: src/all
 .PHONY : all
 
 # The main recursive "preinstall" target.
-preinstall:
+preinstall: lib_testFunc/preinstall
+preinstall: src/preinstall
 .PHONY : preinstall
 
 # The main recursive "clean" target.
-clean: CMakeFiles/main.dir/clean
+clean: lib_testFunc/clean
+clean: src/clean
 .PHONY : clean
 
 #=============================================================================
-# Target rules for target CMakeFiles/main.dir
+# Directory level rules for directory lib_testFunc
+
+# Recursive "all" directory target.
+lib_testFunc/all: lib_testFunc/CMakeFiles/testFunc_shared.dir/all
+lib_testFunc/all: lib_testFunc/CMakeFiles/testFunc_static.dir/all
+.PHONY : lib_testFunc/all
+
+# Recursive "preinstall" directory target.
+lib_testFunc/preinstall:
+.PHONY : lib_testFunc/preinstall
+
+# Recursive "clean" directory target.
+lib_testFunc/clean: lib_testFunc/CMakeFiles/testFunc_shared.dir/clean
+lib_testFunc/clean: lib_testFunc/CMakeFiles/testFunc_static.dir/clean
+.PHONY : lib_testFunc/clean
+
+#=============================================================================
+# Directory level rules for directory src
+
+# Recursive "all" directory target.
+src/all: src/CMakeFiles/main.dir/all
+.PHONY : src/all
+
+# Recursive "preinstall" directory target.
+src/preinstall:
+.PHONY : src/preinstall
+
+# Recursive "clean" directory target.
+src/clean: src/CMakeFiles/main.dir/clean
+.PHONY : src/clean
+
+#=============================================================================
+# Target rules for target lib_testFunc/CMakeFiles/testFunc_shared.dir
 
 # All Build rule for target.
-CMakeFiles/main.dir/all:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/depend
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/hxt/Desktop/cmake_demo/build/CMakeFiles --progress-num=1,2,3,4 "Built target main"
-.PHONY : CMakeFiles/main.dir/all
+lib_testFunc/CMakeFiles/testFunc_shared.dir/all:
+	$(MAKE) $(MAKESILENT) -f lib_testFunc/CMakeFiles/testFunc_shared.dir/build.make lib_testFunc/CMakeFiles/testFunc_shared.dir/depend
+	$(MAKE) $(MAKESILENT) -f lib_testFunc/CMakeFiles/testFunc_shared.dir/build.make lib_testFunc/CMakeFiles/testFunc_shared.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/hxt/Desktop/cmake_use/build/CMakeFiles --progress-num=3,4 "Built target testFunc_shared"
+.PHONY : lib_testFunc/CMakeFiles/testFunc_shared.dir/all
 
 # Build rule for subdir invocation for target.
-CMakeFiles/main.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/hxt/Desktop/cmake_demo/build/CMakeFiles 4
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/main.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/hxt/Desktop/cmake_demo/build/CMakeFiles 0
-.PHONY : CMakeFiles/main.dir/rule
+lib_testFunc/CMakeFiles/testFunc_shared.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/hxt/Desktop/cmake_use/build/CMakeFiles 2
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 lib_testFunc/CMakeFiles/testFunc_shared.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/hxt/Desktop/cmake_use/build/CMakeFiles 0
+.PHONY : lib_testFunc/CMakeFiles/testFunc_shared.dir/rule
 
 # Convenience name for target.
-main: CMakeFiles/main.dir/rule
+testFunc_shared: lib_testFunc/CMakeFiles/testFunc_shared.dir/rule
+.PHONY : testFunc_shared
+
+# clean rule for target.
+lib_testFunc/CMakeFiles/testFunc_shared.dir/clean:
+	$(MAKE) $(MAKESILENT) -f lib_testFunc/CMakeFiles/testFunc_shared.dir/build.make lib_testFunc/CMakeFiles/testFunc_shared.dir/clean
+.PHONY : lib_testFunc/CMakeFiles/testFunc_shared.dir/clean
+
+#=============================================================================
+# Target rules for target lib_testFunc/CMakeFiles/testFunc_static.dir
+
+# All Build rule for target.
+lib_testFunc/CMakeFiles/testFunc_static.dir/all:
+	$(MAKE) $(MAKESILENT) -f lib_testFunc/CMakeFiles/testFunc_static.dir/build.make lib_testFunc/CMakeFiles/testFunc_static.dir/depend
+	$(MAKE) $(MAKESILENT) -f lib_testFunc/CMakeFiles/testFunc_static.dir/build.make lib_testFunc/CMakeFiles/testFunc_static.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/hxt/Desktop/cmake_use/build/CMakeFiles --progress-num=5,6 "Built target testFunc_static"
+.PHONY : lib_testFunc/CMakeFiles/testFunc_static.dir/all
+
+# Build rule for subdir invocation for target.
+lib_testFunc/CMakeFiles/testFunc_static.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/hxt/Desktop/cmake_use/build/CMakeFiles 2
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 lib_testFunc/CMakeFiles/testFunc_static.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/hxt/Desktop/cmake_use/build/CMakeFiles 0
+.PHONY : lib_testFunc/CMakeFiles/testFunc_static.dir/rule
+
+# Convenience name for target.
+testFunc_static: lib_testFunc/CMakeFiles/testFunc_static.dir/rule
+.PHONY : testFunc_static
+
+# clean rule for target.
+lib_testFunc/CMakeFiles/testFunc_static.dir/clean:
+	$(MAKE) $(MAKESILENT) -f lib_testFunc/CMakeFiles/testFunc_static.dir/build.make lib_testFunc/CMakeFiles/testFunc_static.dir/clean
+.PHONY : lib_testFunc/CMakeFiles/testFunc_static.dir/clean
+
+#=============================================================================
+# Target rules for target src/CMakeFiles/main.dir
+
+# All Build rule for target.
+src/CMakeFiles/main.dir/all:
+	$(MAKE) $(MAKESILENT) -f src/CMakeFiles/main.dir/build.make src/CMakeFiles/main.dir/depend
+	$(MAKE) $(MAKESILENT) -f src/CMakeFiles/main.dir/build.make src/CMakeFiles/main.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/hxt/Desktop/cmake_use/build/CMakeFiles --progress-num=1,2 "Built target main"
+.PHONY : src/CMakeFiles/main.dir/all
+
+# Build rule for subdir invocation for target.
+src/CMakeFiles/main.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/hxt/Desktop/cmake_use/build/CMakeFiles 2
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 src/CMakeFiles/main.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/hxt/Desktop/cmake_use/build/CMakeFiles 0
+.PHONY : src/CMakeFiles/main.dir/rule
+
+# Convenience name for target.
+main: src/CMakeFiles/main.dir/rule
 .PHONY : main
 
 # clean rule for target.
-CMakeFiles/main.dir/clean:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/clean
-.PHONY : CMakeFiles/main.dir/clean
+src/CMakeFiles/main.dir/clean:
+	$(MAKE) $(MAKESILENT) -f src/CMakeFiles/main.dir/build.make src/CMakeFiles/main.dir/clean
+.PHONY : src/CMakeFiles/main.dir/clean
 
 #=============================================================================
 # Special targets to cleanup operation of make.

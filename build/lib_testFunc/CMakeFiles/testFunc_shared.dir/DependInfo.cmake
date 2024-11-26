@@ -8,7 +8,7 @@ set(CMAKE_DEPENDS_LANGUAGES
 
 # The set of dependency files which are needed:
 set(CMAKE_DEPENDS_DEPENDENCY_FILES
-  "/home/hxt/Desktop/cmake_use/src/main.c" "src/CMakeFiles/main.dir/main.c.o" "gcc" "src/CMakeFiles/main.dir/main.c.o.d"
+  "/home/hxt/Desktop/cmake_use/lib_testFunc/testFunc.c" "lib_testFunc/CMakeFiles/testFunc_shared.dir/testFunc.c.o" "gcc" "lib_testFunc/CMakeFiles/testFunc_shared.dir/testFunc.c.o.d"
   )
 
 # Targets to which this target links which contain Fortran sources.

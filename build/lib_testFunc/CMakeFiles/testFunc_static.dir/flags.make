@@ -4,7 +4,7 @@
 # compile C with /usr/bin/cc
 C_DEFINES = 
 
-C_INCLUDES = -I/home/hxt/Desktop/cmake_demo/include
+C_INCLUDES = 
 
 C_FLAGS = 
 

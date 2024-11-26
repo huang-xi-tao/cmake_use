@@ -1,6 +1,6 @@
-src/CMakeFiles/main.dir/testFunc1.c.o: \
- /home/hxt/Desktop/cmake_demo/src/testFunc1.c /usr/include/stdc-predef.h \
- /usr/include/stdio.h \
+lib_testFunc/CMakeFiles/testFunc_static.dir/testFunc.c.o: \
+ /home/hxt/Desktop/cmake_use/lib_testFunc/testFunc.c \
+ /usr/include/stdc-predef.h /usr/include/stdio.h \
  /usr/include/x86_64-linux-gnu/bits/libc-header-start.h \
  /usr/include/features.h /usr/include/features-time64.h \
  /usr/include/x86_64-linux-gnu/bits/wordsize.h \
@@ -23,4 +23,4 @@ src/CMakeFiles/main.dir/testFunc1.c.o: \
  /usr/include/x86_64-linux-gnu/bits/stdio_lim.h \
  /usr/include/x86_64-linux-gnu/bits/floatn.h \
  /usr/include/x86_64-linux-gnu/bits/floatn-common.h \
- /home/hxt/Desktop/cmake_demo/src/../inc/testFunc1.h
+ /home/hxt/Desktop/cmake_use/lib_testFunc/testFunc.h

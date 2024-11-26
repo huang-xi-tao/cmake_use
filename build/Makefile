@@ -57,10 +57,10 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/hxt/Desktop/cmake_demo
+CMAKE_SOURCE_DIR = /home/hxt/Desktop/cmake_use
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/hxt/Desktop/cmake_demo/build
+CMAKE_BINARY_DIR = /home/hxt/Desktop/cmake_use/build
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -87,9 +87,9 @@ rebuild_cache/fast: rebuild_cache
 
 # The main all target
 all: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/hxt/Desktop/cmake_demo/build/CMakeFiles /home/hxt/Desktop/cmake_demo/build//CMakeFiles/progress.marks
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/hxt/Desktop/cmake_use/build/CMakeFiles /home/hxt/Desktop/cmake_use/build//CMakeFiles/progress.marks
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/hxt/Desktop/cmake_demo/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/hxt/Desktop/cmake_use/build/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
@@ -117,6 +117,32 @@ depend:
 .PHONY : depend
 
 #=============================================================================
+# Target rules for targets named testFunc_shared
+
+# Build rule for target.
+testFunc_shared: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 testFunc_shared
+.PHONY : testFunc_shared
+
+# fast build rule for target.
+testFunc_shared/fast:
+	$(MAKE) $(MAKESILENT) -f lib_testFunc/CMakeFiles/testFunc_shared.dir/build.make lib_testFunc/CMakeFiles/testFunc_shared.dir/build
+.PHONY : testFunc_shared/fast
+
+#=============================================================================
+# Target rules for targets named testFunc_static
+
+# Build rule for target.
+testFunc_static: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 testFunc_static
+.PHONY : testFunc_static
+
+# fast build rule for target.
+testFunc_static/fast:
+	$(MAKE) $(MAKESILENT) -f lib_testFunc/CMakeFiles/testFunc_static.dir/build.make lib_testFunc/CMakeFiles/testFunc_static.dir/build
+.PHONY : testFunc_static/fast
+
+#=============================================================================
 # Target rules for targets named main
 
 # Build rule for target.
@@ -126,80 +152,8 @@ main: cmake_check_build_system
 
 # fast build rule for target.
 main/fast:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/build
+	$(MAKE) $(MAKESILENT) -f src/CMakeFiles/main.dir/build.make src/CMakeFiles/main.dir/build
 .PHONY : main/fast
-
-src/main.o: src/main.c.o
-.PHONY : src/main.o
-
-# target to build an object file
-src/main.c.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/src/main.c.o
-.PHONY : src/main.c.o
-
-src/main.i: src/main.c.i
-.PHONY : src/main.i
-
-# target to preprocess a source file
-src/main.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/src/main.c.i
-.PHONY : src/main.c.i
-
-src/main.s: src/main.c.s
-.PHONY : src/main.s
-
-# target to generate assembly for a file
-src/main.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/src/main.c.s
-.PHONY : src/main.c.s
-
-src/testFunc.o: src/testFunc.c.o
-.PHONY : src/testFunc.o
-
-# target to build an object file
-src/testFunc.c.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/src/testFunc.c.o
-.PHONY : src/testFunc.c.o
-
-src/testFunc.i: src/testFunc.c.i
-.PHONY : src/testFunc.i
-
-# target to preprocess a source file
-src/testFunc.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/src/testFunc.c.i
-.PHONY : src/testFunc.c.i
-
-src/testFunc.s: src/testFunc.c.s
-.PHONY : src/testFunc.s
-
-# target to generate assembly for a file
-src/testFunc.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/src/testFunc.c.s
-.PHONY : src/testFunc.c.s
-
-src/testFunc1.o: src/testFunc1.c.o
-.PHONY : src/testFunc1.o
-
-# target to build an object file
-src/testFunc1.c.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/src/testFunc1.c.o
-.PHONY : src/testFunc1.c.o
-
-src/testFunc1.i: src/testFunc1.c.i
-.PHONY : src/testFunc1.i
-
-# target to preprocess a source file
-src/testFunc1.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/src/testFunc1.c.i
-.PHONY : src/testFunc1.c.i
-
-src/testFunc1.s: src/testFunc1.c.s
-.PHONY : src/testFunc1.s
-
-# target to generate assembly for a file
-src/testFunc1.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/src/testFunc1.c.s
-.PHONY : src/testFunc1.c.s
 
 # Help Target
 help:
@@ -210,15 +164,8 @@ help:
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
 	@echo "... main"
-	@echo "... src/main.o"
-	@echo "... src/main.i"
-	@echo "... src/main.s"
-	@echo "... src/testFunc.o"
-	@echo "... src/testFunc.i"
-	@echo "... src/testFunc.s"
-	@echo "... src/testFunc1.o"
-	@echo "... src/testFunc1.i"
-	@echo "... src/testFunc1.s"
+	@echo "... testFunc_shared"
+	@echo "... testFunc_static"
 .PHONY : help
 
 

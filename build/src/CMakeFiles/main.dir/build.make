@@ -53,10 +53,10 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/hxt/Desktop/cmake_demo
+CMAKE_SOURCE_DIR = /home/hxt/Desktop/cmake_use
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/hxt/Desktop/cmake_demo/build
+CMAKE_BINARY_DIR = /home/hxt/Desktop/cmake_use/build
 
 # Include any dependencies generated for this target.
 include src/CMakeFiles/main.dir/depend.make
@@ -70,73 +70,41 @@ include src/CMakeFiles/main.dir/progress.make
 include src/CMakeFiles/main.dir/flags.make
 
 src/CMakeFiles/main.dir/main.c.o: src/CMakeFiles/main.dir/flags.make
-src/CMakeFiles/main.dir/main.c.o: /home/hxt/Desktop/cmake_demo/src/main.c
+src/CMakeFiles/main.dir/main.c.o: /home/hxt/Desktop/cmake_use/src/main.c
 src/CMakeFiles/main.dir/main.c.o: src/CMakeFiles/main.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/hxt/Desktop/cmake_demo/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building C object src/CMakeFiles/main.dir/main.c.o"
-	cd /home/hxt/Desktop/cmake_demo/build/src && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT src/CMakeFiles/main.dir/main.c.o -MF CMakeFiles/main.dir/main.c.o.d -o CMakeFiles/main.dir/main.c.o -c /home/hxt/Desktop/cmake_demo/src/main.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/hxt/Desktop/cmake_use/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building C object src/CMakeFiles/main.dir/main.c.o"
+	cd /home/hxt/Desktop/cmake_use/build/src && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT src/CMakeFiles/main.dir/main.c.o -MF CMakeFiles/main.dir/main.c.o.d -o CMakeFiles/main.dir/main.c.o -c /home/hxt/Desktop/cmake_use/src/main.c
 
 src/CMakeFiles/main.dir/main.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/main.dir/main.c.i"
-	cd /home/hxt/Desktop/cmake_demo/build/src && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/hxt/Desktop/cmake_demo/src/main.c > CMakeFiles/main.dir/main.c.i
+	cd /home/hxt/Desktop/cmake_use/build/src && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/hxt/Desktop/cmake_use/src/main.c > CMakeFiles/main.dir/main.c.i
 
 src/CMakeFiles/main.dir/main.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/main.dir/main.c.s"
-	cd /home/hxt/Desktop/cmake_demo/build/src && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/hxt/Desktop/cmake_demo/src/main.c -o CMakeFiles/main.dir/main.c.s
-
-src/CMakeFiles/main.dir/testFunc.c.o: src/CMakeFiles/main.dir/flags.make
-src/CMakeFiles/main.dir/testFunc.c.o: /home/hxt/Desktop/cmake_demo/src/testFunc.c
-src/CMakeFiles/main.dir/testFunc.c.o: src/CMakeFiles/main.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/hxt/Desktop/cmake_demo/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building C object src/CMakeFiles/main.dir/testFunc.c.o"
-	cd /home/hxt/Desktop/cmake_demo/build/src && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT src/CMakeFiles/main.dir/testFunc.c.o -MF CMakeFiles/main.dir/testFunc.c.o.d -o CMakeFiles/main.dir/testFunc.c.o -c /home/hxt/Desktop/cmake_demo/src/testFunc.c
-
-src/CMakeFiles/main.dir/testFunc.c.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/main.dir/testFunc.c.i"
-	cd /home/hxt/Desktop/cmake_demo/build/src && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/hxt/Desktop/cmake_demo/src/testFunc.c > CMakeFiles/main.dir/testFunc.c.i
-
-src/CMakeFiles/main.dir/testFunc.c.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/main.dir/testFunc.c.s"
-	cd /home/hxt/Desktop/cmake_demo/build/src && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/hxt/Desktop/cmake_demo/src/testFunc.c -o CMakeFiles/main.dir/testFunc.c.s
-
-src/CMakeFiles/main.dir/testFunc1.c.o: src/CMakeFiles/main.dir/flags.make
-src/CMakeFiles/main.dir/testFunc1.c.o: /home/hxt/Desktop/cmake_demo/src/testFunc1.c
-src/CMakeFiles/main.dir/testFunc1.c.o: src/CMakeFiles/main.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/hxt/Desktop/cmake_demo/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building C object src/CMakeFiles/main.dir/testFunc1.c.o"
-	cd /home/hxt/Desktop/cmake_demo/build/src && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT src/CMakeFiles/main.dir/testFunc1.c.o -MF CMakeFiles/main.dir/testFunc1.c.o.d -o CMakeFiles/main.dir/testFunc1.c.o -c /home/hxt/Desktop/cmake_demo/src/testFunc1.c
-
-src/CMakeFiles/main.dir/testFunc1.c.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/main.dir/testFunc1.c.i"
-	cd /home/hxt/Desktop/cmake_demo/build/src && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/hxt/Desktop/cmake_demo/src/testFunc1.c > CMakeFiles/main.dir/testFunc1.c.i
-
-src/CMakeFiles/main.dir/testFunc1.c.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/main.dir/testFunc1.c.s"
-	cd /home/hxt/Desktop/cmake_demo/build/src && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/hxt/Desktop/cmake_demo/src/testFunc1.c -o CMakeFiles/main.dir/testFunc1.c.s
+	cd /home/hxt/Desktop/cmake_use/build/src && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/hxt/Desktop/cmake_use/src/main.c -o CMakeFiles/main.dir/main.c.s
 
 # Object files for target main
 main_OBJECTS = \
-"CMakeFiles/main.dir/main.c.o" \
-"CMakeFiles/main.dir/testFunc.c.o" \
-"CMakeFiles/main.dir/testFunc1.c.o"
+"CMakeFiles/main.dir/main.c.o"
 
 # External object files for target main
 main_EXTERNAL_OBJECTS =
 
-/home/hxt/Desktop/cmake_demo/bin/main: src/CMakeFiles/main.dir/main.c.o
-/home/hxt/Desktop/cmake_demo/bin/main: src/CMakeFiles/main.dir/testFunc.c.o
-/home/hxt/Desktop/cmake_demo/bin/main: src/CMakeFiles/main.dir/testFunc1.c.o
-/home/hxt/Desktop/cmake_demo/bin/main: src/CMakeFiles/main.dir/build.make
-/home/hxt/Desktop/cmake_demo/bin/main: src/CMakeFiles/main.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/home/hxt/Desktop/cmake_demo/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Linking C executable /home/hxt/Desktop/cmake_demo/bin/main"
-	cd /home/hxt/Desktop/cmake_demo/build/src && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/main.dir/link.txt --verbose=$(VERBOSE)
+/home/hxt/Desktop/cmake_use/bin/main: src/CMakeFiles/main.dir/main.c.o
+/home/hxt/Desktop/cmake_use/bin/main: src/CMakeFiles/main.dir/build.make
+/home/hxt/Desktop/cmake_use/bin/main: src/CMakeFiles/main.dir/link.txt
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/home/hxt/Desktop/cmake_use/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking C executable /home/hxt/Desktop/cmake_use/bin/main"
+	cd /home/hxt/Desktop/cmake_use/build/src && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/main.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
-src/CMakeFiles/main.dir/build: /home/hxt/Desktop/cmake_demo/bin/main
+src/CMakeFiles/main.dir/build: /home/hxt/Desktop/cmake_use/bin/main
 .PHONY : src/CMakeFiles/main.dir/build
 
 src/CMakeFiles/main.dir/clean:
-	cd /home/hxt/Desktop/cmake_demo/build/src && $(CMAKE_COMMAND) -P CMakeFiles/main.dir/cmake_clean.cmake
+	cd /home/hxt/Desktop/cmake_use/build/src && $(CMAKE_COMMAND) -P CMakeFiles/main.dir/cmake_clean.cmake
 .PHONY : src/CMakeFiles/main.dir/clean
 
 src/CMakeFiles/main.dir/depend:
-	cd /home/hxt/Desktop/cmake_demo/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/hxt/Desktop/cmake_demo /home/hxt/Desktop/cmake_demo/src /home/hxt/Desktop/cmake_demo/build /home/hxt/Desktop/cmake_demo/build/src /home/hxt/Desktop/cmake_demo/build/src/CMakeFiles/main.dir/DependInfo.cmake "--color=$(COLOR)"
+	cd /home/hxt/Desktop/cmake_use/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/hxt/Desktop/cmake_use /home/hxt/Desktop/cmake_use/src /home/hxt/Desktop/cmake_use/build /home/hxt/Desktop/cmake_use/build/src /home/hxt/Desktop/cmake_use/build/src/CMakeFiles/main.dir/DependInfo.cmake "--color=$(COLOR)"
 .PHONY : src/CMakeFiles/main.dir/depend
 

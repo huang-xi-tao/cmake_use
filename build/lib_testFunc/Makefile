@@ -87,14 +87,14 @@ rebuild_cache/fast: rebuild_cache
 
 # The main all target
 all: cmake_check_build_system
-	cd /home/hxt/Desktop/cmake_use/build && $(CMAKE_COMMAND) -E cmake_progress_start /home/hxt/Desktop/cmake_use/build/CMakeFiles /home/hxt/Desktop/cmake_use/build/src//CMakeFiles/progress.marks
-	cd /home/hxt/Desktop/cmake_use/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 src/all
+	cd /home/hxt/Desktop/cmake_use/build && $(CMAKE_COMMAND) -E cmake_progress_start /home/hxt/Desktop/cmake_use/build/CMakeFiles /home/hxt/Desktop/cmake_use/build/lib_testFunc//CMakeFiles/progress.marks
+	cd /home/hxt/Desktop/cmake_use/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 lib_testFunc/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/hxt/Desktop/cmake_use/build/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
 clean:
-	cd /home/hxt/Desktop/cmake_use/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 src/clean
+	cd /home/hxt/Desktop/cmake_use/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 lib_testFunc/clean
 .PHONY : clean
 
 # The main clean target
@@ -103,12 +103,12 @@ clean/fast: clean
 
 # Prepare targets for installation.
 preinstall: all
-	cd /home/hxt/Desktop/cmake_use/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 src/preinstall
+	cd /home/hxt/Desktop/cmake_use/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 lib_testFunc/preinstall
 .PHONY : preinstall
 
 # Prepare targets for installation.
 preinstall/fast:
-	cd /home/hxt/Desktop/cmake_use/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 src/preinstall
+	cd /home/hxt/Desktop/cmake_use/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 lib_testFunc/preinstall
 .PHONY : preinstall/fast
 
 # clear depends
@@ -117,42 +117,59 @@ depend:
 .PHONY : depend
 
 # Convenience name for target.
-src/CMakeFiles/main.dir/rule:
-	cd /home/hxt/Desktop/cmake_use/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 src/CMakeFiles/main.dir/rule
-.PHONY : src/CMakeFiles/main.dir/rule
+lib_testFunc/CMakeFiles/testFunc_shared.dir/rule:
+	cd /home/hxt/Desktop/cmake_use/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 lib_testFunc/CMakeFiles/testFunc_shared.dir/rule
+.PHONY : lib_testFunc/CMakeFiles/testFunc_shared.dir/rule
 
 # Convenience name for target.
-main: src/CMakeFiles/main.dir/rule
-.PHONY : main
+testFunc_shared: lib_testFunc/CMakeFiles/testFunc_shared.dir/rule
+.PHONY : testFunc_shared
 
 # fast build rule for target.
-main/fast:
-	cd /home/hxt/Desktop/cmake_use/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/main.dir/build.make src/CMakeFiles/main.dir/build
-.PHONY : main/fast
+testFunc_shared/fast:
+	cd /home/hxt/Desktop/cmake_use/build && $(MAKE) $(MAKESILENT) -f lib_testFunc/CMakeFiles/testFunc_shared.dir/build.make lib_testFunc/CMakeFiles/testFunc_shared.dir/build
+.PHONY : testFunc_shared/fast
 
-main.o: main.c.o
-.PHONY : main.o
+# Convenience name for target.
+lib_testFunc/CMakeFiles/testFunc_static.dir/rule:
+	cd /home/hxt/Desktop/cmake_use/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 lib_testFunc/CMakeFiles/testFunc_static.dir/rule
+.PHONY : lib_testFunc/CMakeFiles/testFunc_static.dir/rule
+
+# Convenience name for target.
+testFunc_static: lib_testFunc/CMakeFiles/testFunc_static.dir/rule
+.PHONY : testFunc_static
+
+# fast build rule for target.
+testFunc_static/fast:
+	cd /home/hxt/Desktop/cmake_use/build && $(MAKE) $(MAKESILENT) -f lib_testFunc/CMakeFiles/testFunc_static.dir/build.make lib_testFunc/CMakeFiles/testFunc_static.dir/build
+.PHONY : testFunc_static/fast
+
+testFunc.o: testFunc.c.o
+.PHONY : testFunc.o
 
 # target to build an object file
-main.c.o:
-	cd /home/hxt/Desktop/cmake_use/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/main.dir/build.make src/CMakeFiles/main.dir/main.c.o
-.PHONY : main.c.o
+testFunc.c.o:
+	cd /home/hxt/Desktop/cmake_use/build && $(MAKE) $(MAKESILENT) -f lib_testFunc/CMakeFiles/testFunc_shared.dir/build.make lib_testFunc/CMakeFiles/testFunc_shared.dir/testFunc.c.o
+	cd /home/hxt/Desktop/cmake_use/build && $(MAKE) $(MAKESILENT) -f lib_testFunc/CMakeFiles/testFunc_static.dir/build.make lib_testFunc/CMakeFiles/testFunc_static.dir/testFunc.c.o
+.PHONY : testFunc.c.o
 
-main.i: main.c.i
-.PHONY : main.i
+testFunc.i: testFunc.c.i
+.PHONY : testFunc.i
 
 # target to preprocess a source file
-main.c.i:
-	cd /home/hxt/Desktop/cmake_use/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/main.dir/build.make src/CMakeFiles/main.dir/main.c.i
-.PHONY : main.c.i
+testFunc.c.i:
+	cd /home/hxt/Desktop/cmake_use/build && $(MAKE) $(MAKESILENT) -f lib_testFunc/CMakeFiles/testFunc_shared.dir/build.make lib_testFunc/CMakeFiles/testFunc_shared.dir/testFunc.c.i
+	cd /home/hxt/Desktop/cmake_use/build && $(MAKE) $(MAKESILENT) -f lib_testFunc/CMakeFiles/testFunc_static.dir/build.make lib_testFunc/CMakeFiles/testFunc_static.dir/testFunc.c.i
+.PHONY : testFunc.c.i
 
-main.s: main.c.s
-.PHONY : main.s
+testFunc.s: testFunc.c.s
+.PHONY : testFunc.s
 
 # target to generate assembly for a file
-main.c.s:
-	cd /home/hxt/Desktop/cmake_use/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/main.dir/build.make src/CMakeFiles/main.dir/main.c.s
-.PHONY : main.c.s
+testFunc.c.s:
+	cd /home/hxt/Desktop/cmake_use/build && $(MAKE) $(MAKESILENT) -f lib_testFunc/CMakeFiles/testFunc_shared.dir/build.make lib_testFunc/CMakeFiles/testFunc_shared.dir/testFunc.c.s
+	cd /home/hxt/Desktop/cmake_use/build && $(MAKE) $(MAKESILENT) -f lib_testFunc/CMakeFiles/testFunc_static.dir/build.make lib_testFunc/CMakeFiles/testFunc_static.dir/testFunc.c.s
+.PHONY : testFunc.c.s
 
 # Help Target
 help:
@@ -162,10 +179,11 @@ help:
 	@echo "... depend"
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
-	@echo "... main"
-	@echo "... main.o"
-	@echo "... main.i"
-	@echo "... main.s"
+	@echo "... testFunc_shared"
+	@echo "... testFunc_static"
+	@echo "... testFunc.o"
+	@echo "... testFunc.i"
+	@echo "... testFunc.s"
 .PHONY : help
 
 
